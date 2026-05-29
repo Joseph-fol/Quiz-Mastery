@@ -30,6 +30,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    height: 100dvh;
     overflow: hidden;
     padding: 1rem;
 }
@@ -118,7 +119,7 @@ body {
     display: flex;
     flex-direction: column;
     background: var(--card-bg);
-    overflow-y: auto;
+    overflow: hidden;
 }
 
 .quiz-content-wrapper {
@@ -128,10 +129,13 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    overflow: hidden;
 }
 
 .quiz-body {
     flex: 1;
+    overflow-y: auto;
+    padding-right: 0.5rem;
 }
 
 .question-text {
