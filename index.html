@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-layout">
+        <aside class="brand-panel">
+            <div class="brand-content">
+                <h1 class="logo">Quiz<br>Mastery.</h1>
+                <p class="tagline">Test your knowledge with our curated questions.</p>
+            </div>
+            <div class="progress-wrapper">
+                <span class="progress-label">Progress</span>
+                <div id="questionCounter" class="question-counter"></div>
+            </div>
+            <div class="abstract-shape"></div>
+        </aside>
+
+        <main class="quiz-container">
+            <div class="quiz-content-wrapper">
+                <section class="quiz-body">
+                    <h2 id="questionText" class="question-text">Loading question...</h2>
+                    <div id="optionsContainer" class="options-container">
+                        
+                    </div>
+                </section>
+                
+                <section id="resultContainer" class="result-container" style="display: none;">
+                    <div class="score-circle">
+                        <span id="scorePercentage" class="score-percentage">0%</span>
+                    </div>
+                    <h3 id="scoreMessage" class="score-message"></h3>
+                    <p id="scoreDetails" class="score-details"></p>
+                </section>
+
+                <footer class="quiz-footer">
+                    <button id="previousButton" class="nav-btn secondary-btn" disabled>← Back</button>
+                    <button id="nextButton" class="nav-btn primary-btn">Continue →</button>
+                    <button id="submitButton" class="nav-btn success-btn" style="display: none;">Complete Quiz</button>
+                    <button id="restartButton" class="nav-btn primary-btn" style="display: none;">Restart Exam </button>
+                </footer>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Make sure to use defer so the DOM loads before your script runs -->
+    <script src="script.js" defer></script>
+</body>
+</html>
